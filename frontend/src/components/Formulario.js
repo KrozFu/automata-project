@@ -1,15 +1,14 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 
 const Formulario = () => {
 
     const [datos, setDatos] = useState();
 
-
     return (
         <form role="form">
-            <div class="form-group">
+            <div className="form-group">
                 <h1>Operacion con Automata</h1>
-                <select class="form-control" id="" name="">
+                <select className="form-control" id="" name="">
                     <option value="Union">
                         Union
                     </option>
@@ -24,11 +23,15 @@ const Formulario = () => {
                     </option>
                 </select>
             </div>
-            <h1>Primer Automata</h1>
-            <div class="form-group">
-                <input class="btn btn-secondary" type="file" id="ejemplo_archivo_1" />
+            <h2>First Automa Json</h2>
+            <div className="form-group">
+                <input className="btn btn-secondary" type="file" id="automata_one" />
             </div>
-            <button type="submit" class="btn btn-primary">Cargar Automata</button>
+            <h2>Second Automata Json</h2>
+            <div className="form-group">
+                <input className="btn btn-secondary" type="file" id="automata_two" />
+            </div>
+            <button type="submit" className="btn btn-primary">Cargar Archivo</button>
         </form>
     );
 }
